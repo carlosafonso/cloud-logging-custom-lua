@@ -1,6 +1,6 @@
 # carlosafonso/cloud-logging-custom-lua
 
-This sample repo shows how to use Fluent Bit with a Lua filter to perform custom manipulations of log messages.
+This sample repo shows how to use Fluent Bit with [a Lua filter](https://docs.fluentbit.io/manual/pipeline/filters/lua) to perform custom manipulations of log messages.
 
 In particular, the filter included in this repo parses all key value pairs in the form of `key=value` and adds them as attributes of the log payload. This is particularly useful for Google Cloud Logging, as it currently only accepts either plaintext or JSON-structured logs (even though arbitrary strings can be queries using regexes).
 
